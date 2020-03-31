@@ -1,0 +1,295 @@
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\IASystemWeb.dll.config
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\IASystemWeb.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\IASystemWeb.pdb
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Antlr3.Runtime.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\DAL.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\EntityFramework.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\EntityFramework.SqlServer.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.Owin.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.Owin.Security.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.Owin.Security.Google.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Newtonsoft.Json.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Owin.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\System.Web.Helpers.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\System.Web.Mvc.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\System.Web.Optimization.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\System.Web.Razor.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\System.Web.WebPages.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\WebGrease.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\DAL.pdb
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\System.Web.Helpers.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\System.Web.Mvc.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\System.Web.Optimization.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\System.Web.Razor.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\System.Web.WebPages.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Antlr3.Runtime.pdb
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Newtonsoft.Json.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\EntityFramework.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\EntityFramework.SqlServer.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.Owin.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.Owin.Security.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.Owin.Security.Google.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\obj\Debug\IASystemWeb.csprojResolveAssemblyReference.cache
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\obj\Debug\RdlCompile.cache
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\obj\Debug\RdlCompile.compiled
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\obj\Debug\IASystemWeb.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\IASystemWeb\obj\Debug\IASystemWeb.pdb
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\IASystemWeb.dll.config
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\IASystemWeb.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\IASystemWeb.pdb
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Antlr3.Runtime.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\DAL.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\EntityFramework.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\EntityFramework.SqlServer.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.Owin.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.Owin.Security.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.Owin.Security.Google.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Newtonsoft.Json.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Owin.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\System.Web.Helpers.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\System.Web.Mvc.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\System.Web.Optimization.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\System.Web.Razor.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\System.Web.WebPages.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\WebGrease.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\DAL.pdb
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\System.Web.Helpers.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\System.Web.Mvc.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\System.Web.Optimization.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\System.Web.Razor.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\System.Web.WebPages.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Antlr3.Runtime.pdb
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Newtonsoft.Json.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\EntityFramework.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\EntityFramework.SqlServer.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.Owin.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.Owin.Security.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.Owin.Security.Google.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\obj\Debug\IASystemWeb.csprojResolveAssemblyReference.cache
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\obj\Debug\RdlCompile.cache
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\obj\Debug\RdlCompile.compiled
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\obj\Debug\IASystemWeb.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\IASystemWeb\obj\Debug\IASystemWeb.pdb
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\IASystemWeb.dll.config
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\IASystemWeb.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\IASystemWeb.pdb
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Antlr3.Runtime.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\DAL.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\EntityFramework.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\EntityFramework.SqlServer.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.AspNet.Identity.Core.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Cookies.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Facebook.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Google.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.OAuth.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Twitter.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Web.Infrastructure.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Newtonsoft.Json.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Owin.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Helpers.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Mvc.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Optimization.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Razor.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.WebPages.Deployment.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.WebPages.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.WebPages.Razor.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\WebGrease.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\DAL.pdb
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Helpers.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Mvc.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Optimization.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Razor.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.WebPages.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.WebPages.Deployment.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.WebPages.Razor.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Antlr3.Runtime.pdb
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Newtonsoft.Json.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\EntityFramework.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\EntityFramework.SqlServer.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.AspNet.Identity.Core.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Facebook.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Cookies.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.OAuth.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Google.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Twitter.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\obj\Debug\IASystemWeb.csprojResolveAssemblyReference.cache
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\obj\Debug\RdlCompile.cache
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\obj\Debug\RdlCompile.compiled
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\obj\Debug\IASystemWeb.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\obj\Debug\IASystemWeb.pdb
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\IASystemWeb.dll.config
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\IASystemWeb.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\IASystemWeb.pdb
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Antlr3.Runtime.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\DAL.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\EntityFramework.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\EntityFramework.SqlServer.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.AspNet.Identity.Core.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Cookies.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Facebook.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Google.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.OAuth.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Twitter.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Web.Infrastructure.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Newtonsoft.Json.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Owin.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Helpers.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Mvc.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Optimization.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Razor.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.WebPages.Deployment.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.WebPages.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.WebPages.Razor.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\WebGrease.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\DAL.pdb
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Helpers.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Mvc.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Optimization.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Razor.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.WebPages.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.WebPages.Deployment.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.WebPages.Razor.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Antlr3.Runtime.pdb
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Newtonsoft.Json.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\EntityFramework.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\EntityFramework.SqlServer.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.AspNet.Identity.Core.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Facebook.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Cookies.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.OAuth.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Google.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Twitter.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\obj\Debug\IASystemWeb.csprojResolveAssemblyReference.cache
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\obj\Debug\RdlCompile.cache
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\obj\Debug\RdlCompile.compiled
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\obj\Debug\IASystemWeb.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\IASystemWeb\obj\Debug\IASystemWeb.pdb
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\IASystemWeb.dll.config
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\IASystemWeb.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\IASystemWeb.pdb
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Antlr3.Runtime.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\DAL.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\EntityFramework.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\EntityFramework.SqlServer.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Google.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Newtonsoft.Json.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Owin.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Helpers.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Mvc.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Optimization.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Razor.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.WebPages.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\WebGrease.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\DAL.pdb
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Helpers.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Mvc.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Optimization.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.Razor.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.WebPages.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Antlr3.Runtime.pdb
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Newtonsoft.Json.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\EntityFramework.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\EntityFramework.SqlServer.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Google.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\obj\Debug\IASystemWeb.csprojResolveAssemblyReference.cache
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\obj\Debug\RdlCompile.cache
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\obj\Debug\RdlCompile.compiled
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\obj\Debug\IASystemWeb.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\IASystemWeb\obj\Debug\IASystemWeb.pdb

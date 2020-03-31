@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AttendanceDBModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Attendances">
+      <EntityTypeMapping TypeName="AttendanceDBModel.Attendance">
+        <MappingFragment StoreEntitySet="Attendance">
+          <ScalarProperty Name="AttendanceID" ColumnName="AttendanceID" />
+          <ScalarProperty Name="UniqueID" ColumnName="UniqueID" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="InTime" ColumnName="InTime" />
+          <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+          <ScalarProperty Name="LastInTime" ColumnName="LastInTime" />
+          <ScalarProperty Name="WorkingHour" ColumnName="WorkingHour" />
+          <ScalarProperty Name="WDate" ColumnName="WDate" />
+          <ScalarProperty Name="LateStatus" ColumnName="LateStatus" />
+          <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+          <ScalarProperty Name="OfficeStatus" ColumnName="OfficeStatus" />
+          <ScalarProperty Name="LateEmailSend" ColumnName="LateEmailSend" />
+          <ScalarProperty Name="LateNotify" ColumnName="LateNotify" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AttendanceLogs">
+      <EntityTypeMapping TypeName="AttendanceDBModel.AttendanceLog">
+        <MappingFragment StoreEntitySet="AttendanceLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UniqueID" ColumnName="UniqueID" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="InTime" ColumnName="InTime" />
+          <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+          <ScalarProperty Name="InsideOfficeDuration" ColumnName="InsideOfficeDuration" />
+          <ScalarProperty Name="OutsideOfficeDuration" ColumnName="OutsideOfficeDuration" />
+          <ScalarProperty Name="WDate" ColumnName="WDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AttenDownloadErrors">
+      <EntityTypeMapping TypeName="AttendanceDBModel.AttenDownloadError">
+        <MappingFragment StoreEntitySet="AttenDownloadError">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+          <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="AttendanceDBModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="EmpNumber" ColumnName="EmpNumber" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="AlertEmail" ColumnName="AlertEmail" />
+          <ScalarProperty Name="EmpLevel" ColumnName="EmpLevel" />
+          <ScalarProperty Name="OfficeStartTime" ColumnName="OfficeStartTime" />
+          <ScalarProperty Name="OfficeEndTime" ColumnName="OfficeEndTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LastUpdatedRecords">
+      <EntityTypeMapping TypeName="AttendanceDBModel.LastUpdatedRecord">
+        <MappingFragment StoreEntitySet="LastUpdatedRecord">
+          <ScalarProperty Name="LastUpdatedID" ColumnName="LastUpdatedID" />
+          <ScalarProperty Name="EmpNumber" ColumnName="EmpNumber" />
+          <ScalarProperty Name="MachineNO" ColumnName="MachineNO" />
+          <ScalarProperty Name="VerifyMode" ColumnName="VerifyMode" />
+          <ScalarProperty Name="LYear" ColumnName="LYear" />
+          <ScalarProperty Name="LMonth" ColumnName="LMonth" />
+          <ScalarProperty Name="LDay" ColumnName="LDay" />
+          <ScalarProperty Name="LHour" ColumnName="LHour" />
+          <ScalarProperty Name="LMinute" ColumnName="LMinute" />
+          <ScalarProperty Name="LSecond" ColumnName="LSecond" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Organaizations">
+      <EntityTypeMapping TypeName="AttendanceDBModel.Organaization">
+        <MappingFragment StoreEntitySet="Organaization">
+          <ScalarProperty Name="OrganaizationID" ColumnName="OrganaizationID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="Web" ColumnName="Web" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TmpAttendances">
+      <EntityTypeMapping TypeName="AttendanceDBModel.TmpAttendance">
+        <MappingFragment StoreEntitySet="TmpAttendance">
+          <ScalarProperty Name="TmpAttendanceID" ColumnName="TmpAttendanceID" />
+          <ScalarProperty Name="UniqueID" ColumnName="UniqueID" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="InTime" ColumnName="InTime" />
+          <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+          <ScalarProperty Name="LastInTime" ColumnName="LastInTime" />
+          <ScalarProperty Name="WorkingHour" ColumnName="WorkingHour" />
+          <ScalarProperty Name="WDate" ColumnName="WDate" />
+          <ScalarProperty Name="LateStatus" ColumnName="LateStatus" />
+          <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+          <ScalarProperty Name="OfficeStatus" ColumnName="OfficeStatus" />
+          <ScalarProperty Name="LateEmailSend" ColumnName="LateEmailSend" />
+          <ScalarProperty Name="LateNotify" ColumnName="LateNotify" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TmpAttendanceLogs">
+      <EntityTypeMapping TypeName="AttendanceDBModel.TmpAttendanceLog">
+        <MappingFragment StoreEntitySet="TmpAttendanceLog">
+          <ScalarProperty Name="TmpAttendanceLogID" ColumnName="TmpAttendanceLogID" />
+          <ScalarProperty Name="UniqueID" ColumnName="UniqueID" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="InTime" ColumnName="InTime" />
+          <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+          <ScalarProperty Name="InsideOfficeDuration" ColumnName="InsideOfficeDuration" />
+          <ScalarProperty Name="OutsideOfficeDuration" ColumnName="OutsideOfficeDuration" />
+          <ScalarProperty Name="WDate" ColumnName="WDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_1">
+      <EntityTypeMapping TypeName="AttendanceDBModel.View_1">
+        <MappingFragment StoreEntitySet="View_1">
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="WDate" ColumnName="WDate" />
+          <ScalarProperty Name="Late" ColumnName="Late" />
+          <ScalarProperty Name="DayDeduct" ColumnName="DayDeduct" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_Attendance">
+      <EntityTypeMapping TypeName="AttendanceDBModel.vw_Attendance">
+        <MappingFragment StoreEntitySet="vw_Attendance">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="EmpNumber" ColumnName="EmpNumber" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="WorkingHour" ColumnName="WorkingHour" />
+          <ScalarProperty Name="WDate" ColumnName="WDate" />
+          <ScalarProperty Name="LateStatus" ColumnName="LateStatus" />
+          <ScalarProperty Name="OfficeStatus" ColumnName="OfficeStatus" />
+          <ScalarProperty Name="AttendanceID" ColumnName="AttendanceID" />
+          <ScalarProperty Name="LateNotify" ColumnName="LateNotify" />
+          <ScalarProperty Name="LateEmailSend" ColumnName="LateEmailSend" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="InTime" ColumnName="InTime" />
+          <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+          <ScalarProperty Name="LastInTime" ColumnName="LastInTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_AttendanceLog">
+      <EntityTypeMapping TypeName="AttendanceDBModel.vw_AttendanceLog">
+        <MappingFragment StoreEntitySet="vw_AttendanceLog">
+          <ScalarProperty Name="InTime" ColumnName="InTime" />
+          <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+          <ScalarProperty Name="InsideOfficeDuration" ColumnName="InsideOfficeDuration" />
+          <ScalarProperty Name="OutsideOfficeDuration" ColumnName="OutsideOfficeDuration" />
+          <ScalarProperty Name="WDate" ColumnName="WDate" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_InsideHour">
+      <EntityTypeMapping TypeName="AttendanceDBModel.vw_InsideHour">
+        <MappingFragment StoreEntitySet="vw_InsideHour">
+          <ScalarProperty Name="WDate" ColumnName="WDate" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="Inside" ColumnName="Inside" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vw_OutsideHour">
+      <EntityTypeMapping TypeName="AttendanceDBModel.vw_OutsideHour">
+        <MappingFragment StoreEntitySet="vw_OutsideHour">
+          <ScalarProperty Name="WDate" ColumnName="WDate" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="Outside" ColumnName="Outside" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionName="AttendanceDBModel.Store.get_AllEmpInsideHour" FunctionImportName="get_AllEmpInsideHour">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AttendanceDBModel.get_AllEmpInsideHour_Result">
+          <ScalarProperty Name="WDate" ColumnName="WDate" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="Inside" ColumnName="Inside" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionName="AttendanceDBModel.Store.get_AllEmpOutsideHour" FunctionImportName="get_AllEmpOutsideHour">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AttendanceDBModel.get_AllEmpOutsideHour_Result">
+          <ScalarProperty Name="WDate" ColumnName="WDate" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="Outside" ColumnName="Outside" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_Attendance" FunctionName="AttendanceDBModel.Store.sp_Attendance" />
+    <FunctionImportMapping FunctionImportName="sp_MonthlyLate" FunctionName="AttendanceDBModel.Store.sp_MonthlyLate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AttendanceDBModel.sp_MonthlyLate_Result">
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="Late" ColumnName="Late" />
+          <ScalarProperty Name="DayDeduct" ColumnName="DayDeduct" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,49 @@
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\DAL\bin\Debug\DAL.dll.config
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\DAL\bin\Debug\DAL.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\DAL\bin\Debug\DAL.pdb
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\DAL\bin\Debug\EntityFramework.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\DAL\bin\Debug\EntityFramework.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\DAL\obj\Debug\DAL.dll
+D:\Projects\Attendance All\BCL_GYM\BCL_GYM_Web\DAL\obj\Debug\DAL.pdb
+D:\Projects\Attendance All\Invogue\Invogue_Web\DAL\bin\Debug\DAL.dll.config
+D:\Projects\Attendance All\Invogue\Invogue_Web\DAL\bin\Debug\DAL.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\DAL\bin\Debug\DAL.pdb
+D:\Projects\Attendance All\Invogue\Invogue_Web\DAL\bin\Debug\EntityFramework.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\DAL\bin\Debug\EntityFramework.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web\DAL\obj\Debug\DAL.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web\DAL\obj\Debug\DAL.pdb
+D:\Projects\Attendance All\Invogue\Invogue_Web\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\DAL\bin\Debug\DAL.dll.config
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\DAL\bin\Debug\DAL.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\DAL\bin\Debug\DAL.pdb
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\DAL\bin\Debug\EntityFramework.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\DAL\bin\Debug\EntityFramework.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\DAL\obj\Debug\DAL.dll
+E:\rajib\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\DAL\obj\Debug\DAL.pdb
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\DAL\bin\Debug\DAL.dll.config
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\DAL\bin\Debug\DAL.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\DAL\bin\Debug\DAL.pdb
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\DAL\bin\Debug\EntityFramework.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\DAL\bin\Debug\EntityFramework.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\DAL\obj\Debug\DAL.dll
+E:\rajib\Projrct\All_Attendance\AttendanceUpdate\Invogue_Web_MonthlyLate\Invogue_Web_MonthlyLate\DAL\obj\Debug\DAL.pdb
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\DAL\bin\Debug\DAL.dll.config
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\DAL\bin\Debug\DAL.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\DAL\bin\Debug\DAL.pdb
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\DAL\bin\Debug\EntityFramework.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\DAL\bin\Debug\EntityFramework.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\DAL\obj\Debug\DAL.dll
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\DAL\obj\Debug\DAL.pdb
+D:\Projects\Attendance All\Invogue\Invogue_Web_MonthlyLate\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache

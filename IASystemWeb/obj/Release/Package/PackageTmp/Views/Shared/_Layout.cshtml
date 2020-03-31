@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    @RenderSection("section_top", required: false)
+
+    @*Start:: Theme default CSS*@
+    @System.Web.Optimization.Styles.Render("~/bundles/css")
+
+    <link href="~/Content/built_in/pages/css/pages.css" rel="stylesheet" />
+    @*<link href="~/Content/AdminLTE.min.css" rel="stylesheet" />*@
+    <link href="~/Content/angucomplete-alt.css" rel="stylesheet" />
+    <link href="~/Content/built_in/assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/built_in/pages/css/pages-icons.css" rel="stylesheet" />
+    @*End:: Theme default CSS*@
+
+
+    @*Start:: Custom CSS*@
+
+    <link href="~/Content/user_define/form-style/main.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="~/Content/user_define/form-style/form-style.css" rel="stylesheet" />
+    <link href="~/Content/user_define/form-style/form-control.css" rel="stylesheet" />
+    <link href="~/Content/user_define/form-style/form-manage.css" rel="stylesheet" />
+    <link href="~/Content/treeGrid.css" rel="stylesheet" />
+    <link href="~/Content/toastr.css" rel="stylesheet" />
+    <link href="~/Content/custom.css" rel="stylesheet" />
+    @*<link href="~/Content/style.css" rel="stylesheet" />*@
+    @*<link href="~/Content/user_define/js/message/jquery-impromptu.css" rel="stylesheet" />*@
+    @*<link href="~/Content/user_define/form-style/timeout-dialog.css" rel="stylesheet" />*@
+    @*End:: Custom CSS*@
+
+    <script src="~/Content/built_in/jquery.min.js"></script>
+    <script src="~/Content/user_define/tab/jquery-ui-1.10.4.custom.js"></script>
+    <script src="~/Content/user_define/js/custom.js"></script>
+    @*<script src="~/Content/user_define/js/jquery.cookie.js"></script>*@
+    <!--Toaster-->
+    <script src="~/Content/js/toastr.min.js"></script>
+
+
+
+    <style>
+        .panel-heading a:not(.btn) {
+            color: #ffffff !important;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body ng-app="app" class="fixed-header windows desktop sidebar-visible menu-pin">
+
+
+    <div class="page-container ">
+        <div class="header ">
+            <nav class="navbar">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="@Url.Action("Index", "Home", new { area=""})">
+                        <img src="@Url.Content("~/Content/built_in/assets/img/invogue.png")" alt="logo" class="brand" data-src="@Url.Content("~/Content/built_in/assets/img/invogue.png")" data-src-retina="@Url.Content("~/Content/built_in/assets/img/invogue.png")">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reports <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("Employee In-Out", "Index", "EmpInOut")</li>
+                                <li>@Html.ActionLink("Add Comments", "Index", "AddComments")</li>
+                                <li>@Html.ActionLink("Employee inside Hour", "Index", "EmpInHr")</li>
+                                <li>@Html.ActionLink("Employee Outside Hour", "Index", "AllEmpOutsideHour")</li>
+                                <li>@Html.ActionLink("Employee In", "Index", "AllEmpIn")</li>
+                                <li>@Html.ActionLink("Employee Out", "Index", "AllEmpOut")</li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+            <div class="clock-content">
+                
+                <div id="info-box">
+                    <div id="clock"></div>
+
+                </div>
+            </div>
+            <div class="right-heading">
+                <h3 style="color:white;font-weight:bold;"> <span style="color:red"> BENGAL WELLBEING </span> ATTENDANCE </h3>
+                
+            </div>
+        </div>
+
+        <!-- Start Body -->
+        <div class="page-content-wrapper ">
+            <div class="content ">
+                <div id="loading">
+                    <img id="imagen" src="~/Content/built_in/pages/img/progress/progress-circle-success.svg" alt="Loading..." style="left: 50%;" />
+                    <div id="timer">Timer</div>
+                </div>
+                @RenderBody()
+
+            </div>
+
+            <div class="container-fluid container-fixed-lg footer">
+                <div class="copyright sm-text-center">
+                    <p class="small no-margin pull-left sm-pull-reset">
+                        <span class="hint-text">Copyright &copy;  2018 </span>
+                        <span class="font-montserrat">Invogue Software Limited</span>.
+                        <span class="hint-text">All rights reserved. </span>
+                        <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a></span>
+                    </p>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Body -->
+    </div>
+
+
+    <script>
+        $(document).ready(function ($) {
+            // Hide Loader
+            $("#loading").hide();
+            //$("#btnPre").click(function () {
+            //    $('#loading').show();
+            //})
+            // menu
+            var device_width = $(window).width();
+            if (device_width < 1000) {
+                $("body").removeClass('windows');
+                $("body").removeClass('desktop');
+                $("body").removeClass('sidebar-visible');
+                $("body").removeClass('menu-pin');
+            }
+
+            //menu selected
+            $(".menu-items a").each(function () {
+                var curURL = window.location.href; // Current full URL
+                curURL = curURL.replace(/\/$/, "");
+                curURL = decodeURIComponent(curURL);
+
+                var originUrl = window.location.origin; // Domain Part from curURL
+                var newUrl = curURL.replace(originUrl, '');// Remove Domain Part
+
+                var href = $(this).attr('href');
+
+                if (newUrl === href) {
+                    $(this).closest('li').addClass('open active');
+                    $(this).closest('li').parents("li").addClass('open active');
+                    $(this).closest('li').parents("ul").css({ "display": "block" });
+                }
+                else {
+                    var secondurl = $("ul.breadcrumb a:eq(1)").attr("href");
+                    if (secondurl === href) {
+                        $(this).closest('li').addClass('open active');
+                        $(this).closest('li').parents("li").addClass('open active');
+                        $(this).closest('li').parents("ul").css({ "display": "block" });
+                    }
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            $(window).on('load', function () {
+                $("#loading").hide();
+            });
+            $("#attendance").click(function () {
+                //$("#loading").show();
+                $.ajax({
+                    url: 'Home/DownloadFromDevice',
+                    type: "POST",
+                    beforeSend: function () {
+                        $('#loading').show();
+                    },
+                    complete: function () {
+                        setTimeout(function () { $("#loading").hide(); }, 2000);
+                    },
+                    success: function (response) {
+                        if (response != '') {
+                            alert(response);
+                        }
+                    }
+                });
+            })
+        })
+
+    </script>
+
+    @RenderSection("section_footer", required: false)
+
+    @*Start:: Theme default JS*@
+
+    @System.Web.Optimization.Scripts.Render("~/bundles/jquery")
+    <script src="~/Content/built_in/pages/js/pages.min.js"></script>
+    <script src="~/Content/js/custom.js"></script>
+
+    @*<script src="~/Content/moment.min.js"></script>
+        <script src="~/Content/script.js"></script>*@
+
+    @*End:: Theme default JS*@
+
+    <!--Start Angular js-->
+    <script type="text/javascript" src="~/Content/angular/angular.js"></script>
+    <script type="text/javascript" src="~/Content/angular/angular-route.js"></script>
+    <script type="text/javascript" src="~/Content/angular/angular-touch.js"></script>
+    <script type="text/javascript" src="~/Content/angular/angular-animate.js"></script>
+
+    <script type="text/javascript" src="~/Content/angular/angular-sanitize.js"></script>
+    <script type="text/javascript" src="~/Content/angular/angular-cookies.js"></script>
+    <script type="text/javascript" src="~/Content/angular/angular-resource.js"></script>
+
+    <script src="~/Content/smart-table.js"></script>
+
+    <script type="text/javascript" src="~/Content/angular/ngDialog.js"></script>
+
+    <script src="~/Content/angular-user-define/tree-grid-directive.js"></script>
+    <script src="~/Content/angular/angucomplete-alt.js"></script>
+
+    <script src="~/Content/angular/angular-idle.js"></script>
+
+    <script src="~/Content/angular-user-define/route.js"></script>
+    <!-- Angular repository-->
+    <script type="text/javascript" src="~/Content/angular-user-define/commonRepository.js"></script>
+    <script type="text/javascript" src="~/Content/angular-user-define/attendance/service/attendanceRepository.js"></script>
+    @*<script src="~/Content/angular-user-define/attendance/service/empInOutRepository.js"></script>
+    <script src="~/Content/angular-user-define/attendance/service/addCommentsRepository.js"></script>*@
+    <!-- Angular controller-->
+
+    <script type="text/javascript" src="~/Content/angular-user-define/attendance/controller/attendanceController.js"></script>
+    <script src="~/Content/angular-user-define/attendance/controller/empInOutController.js"></script>
+    <script src="~/Content/angular-user-define/attendance/controller/addCommentsController.js"></script>
+    <script src="~/Content/angular-user-define/attendance/controller/empInHrController.js"></script>
+    <script src="~/Content/angular-user-define/attendance/controller/allEmpInController.js"></script>
+    <script src="~/Content/angular-user-define/attendance/controller/allEmpOutController.js"></script>
+    <script src="~/Content/angular-user-define/attendance/controller/allEmpOutsideHourController.js"></script>
+    @*<script src="~/Content/angular-user-define/reports/controller/dailyAttendanceController.js"></script>*@
+</body>
+
+</html>
+
+

@@ -1,0 +1,942 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AttendanceDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Attendance">
+          <Key>
+            <PropertyRef Name="AttendanceID" />
+          </Key>
+          <Property Name="AttendanceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UniqueID" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="EmpID" Type="int" Nullable="false" />
+          <Property Name="InTime" Type="datetime" />
+          <Property Name="OutTime" Type="datetime" />
+          <Property Name="LastInTime" Type="datetime" />
+          <Property Name="WorkingHour" Type="varchar" MaxLength="20" />
+          <Property Name="WDate" Type="date" Nullable="false" />
+          <Property Name="LateStatus" Type="varchar" MaxLength="15" />
+          <Property Name="Purpose" Type="char" MaxLength="1" />
+          <Property Name="OfficeStatus" Type="char" MaxLength="1" />
+          <Property Name="LateEmailSend" Type="char" MaxLength="1" />
+          <Property Name="LateNotify" Type="varchar" MaxLength="30" />
+          <Property Name="Comments" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="AttendanceLog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UniqueID" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="EmpID" Type="int" Nullable="false" />
+          <Property Name="InTime" Type="datetime" />
+          <Property Name="OutTime" Type="datetime" />
+          <Property Name="InsideOfficeDuration" Type="time" Precision="7" />
+          <Property Name="OutsideOfficeDuration" Type="time" Precision="7" />
+          <Property Name="WDate" Type="datetime2" Precision="7" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AttenDownloadError">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ErrorMessage" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="CreatedTime" Type="datetime" Nullable="false" />
+          <Property Name="CreatedDate" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmpID" />
+          </Key>
+          <Property Name="EmpID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmpNumber" Type="int" Nullable="false" />
+          <Property Name="EmpName" Type="nchar" MaxLength="20" Nullable="false" />
+          <Property Name="Designation" Type="nchar" MaxLength="30" />
+          <Property Name="Email" Type="varchar" MaxLength="30" />
+          <Property Name="AlertEmail" Type="varchar" MaxLength="30" />
+          <Property Name="EmpLevel" Type="tinyint" />
+          <Property Name="OfficeStartTime" Type="time" Precision="7" />
+          <Property Name="OfficeEndTime" Type="time" Precision="7" />
+        </EntityType>
+        <EntityType Name="LastUpdatedRecord">
+          <Key>
+            <PropertyRef Name="LastUpdatedID" />
+          </Key>
+          <Property Name="LastUpdatedID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmpNumber" Type="int" Nullable="false" />
+          <Property Name="MachineNO" Type="int" Nullable="false" />
+          <Property Name="VerifyMode" Type="int" Nullable="false" />
+          <Property Name="LYear" Type="int" Nullable="false" />
+          <Property Name="LMonth" Type="int" Nullable="false" />
+          <Property Name="LDay" Type="int" Nullable="false" />
+          <Property Name="LHour" Type="int" />
+          <Property Name="LMinute" Type="varchar" MaxLength="2" />
+          <Property Name="LSecond" Type="varchar" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="Organaization">
+          <Key>
+            <PropertyRef Name="OrganaizationID" />
+          </Key>
+          <Property Name="OrganaizationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="210" />
+          <Property Name="Address" Type="varchar" MaxLength="256" />
+          <Property Name="Phone" Type="varchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="60" />
+          <Property Name="Logo" Type="image" />
+          <Property Name="Web" Type="varchar" MaxLength="45" />
+        </EntityType>
+        <EntityType Name="TmpAttendance">
+          <Key>
+            <PropertyRef Name="TmpAttendanceID" />
+          </Key>
+          <Property Name="TmpAttendanceID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UniqueID" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="EmpID" Type="int" Nullable="false" />
+          <Property Name="InTime" Type="datetime" />
+          <Property Name="OutTime" Type="datetime" />
+          <Property Name="LastInTime" Type="datetime" />
+          <Property Name="WorkingHour" Type="varchar" MaxLength="20" />
+          <Property Name="WDate" Type="date" Nullable="false" />
+          <Property Name="LateStatus" Type="varchar" MaxLength="15" />
+          <Property Name="Purpose" Type="char" MaxLength="1" />
+          <Property Name="OfficeStatus" Type="char" MaxLength="1" />
+          <Property Name="LateEmailSend" Type="char" MaxLength="1" />
+          <Property Name="LateNotify" Type="varchar" MaxLength="30" />
+          <Property Name="Comments" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="TmpAttendanceLog">
+          <Key>
+            <PropertyRef Name="TmpAttendanceLogID" />
+          </Key>
+          <Property Name="TmpAttendanceLogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UniqueID" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="EmpID" Type="int" Nullable="false" />
+          <Property Name="InTime" Type="datetime" />
+          <Property Name="OutTime" Type="datetime" />
+          <Property Name="InsideOfficeDuration" Type="time" Precision="7" />
+          <Property Name="OutsideOfficeDuration" Type="time" Precision="7" />
+          <Property Name="WDate" Type="datetime2" Precision="7" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'AttendanceDB.dbo.dbo.ViewEmpLate' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="dbo_ViewEmpLate">
+          <Property Name="EmpName" Type="nchar" MaxLength="20" />
+          <Property Name="Designation" Type="nchar" MaxLength="30" />
+          <Property Name="Late" Type="int" />
+          <Property Name="DayDeduct" Type="int" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'AttendanceDB.dbo.View_1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="View_1">
+          <Key>
+            <PropertyRef Name="WDate" />
+          </Key>
+          <Property Name="EmpName" Type="nchar" MaxLength="20" />
+          <Property Name="Designation" Type="nchar" MaxLength="30" />
+          <Property Name="WDate" Type="date" Nullable="false" />
+          <Property Name="Late" Type="int" />
+          <Property Name="DayDeduct" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'AttendanceDB.dbo.vw_Attendance' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="vw_Attendance">
+          <Key>
+            <PropertyRef Name="WDate" />
+            <PropertyRef Name="AttendanceID" />
+          </Key>
+          <Property Name="EmpID" Type="int" />
+          <Property Name="EmpNumber" Type="int" />
+          <Property Name="EmpName" Type="nchar" MaxLength="20" />
+          <Property Name="Designation" Type="nchar" MaxLength="30" />
+          <Property Name="WorkingHour" Type="varchar" MaxLength="20" />
+          <Property Name="WDate" Type="date" Nullable="false" />
+          <Property Name="LateStatus" Type="varchar" MaxLength="15" />
+          <Property Name="OfficeStatus" Type="char" MaxLength="1" />
+          <Property Name="AttendanceID" Type="int" Nullable="false" />
+          <Property Name="LateNotify" Type="varchar" MaxLength="30" />
+          <Property Name="LateEmailSend" Type="char" MaxLength="1" />
+          <Property Name="Comments" Type="varchar" MaxLength="500" />
+          <Property Name="InTime" Type="datetime" />
+          <Property Name="OutTime" Type="datetime" />
+          <Property Name="LastInTime" Type="datetime" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'AttendanceDB.dbo.vw_AttendanceLog' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="vw_AttendanceLog">
+          <Key>
+            <PropertyRef Name="WDate" />
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="EmpID" />
+          </Key>
+          <Property Name="InTime" Type="datetime" />
+          <Property Name="OutTime" Type="datetime" />
+          <Property Name="InsideOfficeDuration" Type="time" Precision="7" />
+          <Property Name="OutsideOfficeDuration" Type="time" Precision="7" />
+          <Property Name="WDate" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="EmpID" Type="int" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'AttendanceDB.dbo.vw_InsideHour' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="vw_InsideHour">
+          <Key>
+            <PropertyRef Name="WDate" />
+          </Key>
+          <Property Name="WDate" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="EmpName" Type="nchar" MaxLength="20" />
+          <Property Name="Inside" Type="varchar" MaxLength="22" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'AttendanceDB.dbo.vw_MonthlyLate' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="vw_MonthlyLate">
+          <Property Name="EmpName" Type="nchar" MaxLength="20" />
+          <Property Name="Designation" Type="nchar" MaxLength="30" />
+          <Property Name="Late" Type="int" />
+          <Property Name="DayDeduct" Type="int" />
+        </EntityType>-->
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'AttendanceDB.dbo.vw_OutsideHour' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="vw_OutsideHour">
+          <Key>
+            <PropertyRef Name="WDate" />
+          </Key>
+          <Property Name="WDate" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="EmpName" Type="nchar" MaxLength="20" />
+          <Property Name="Outside" Type="varchar" MaxLength="22" />
+        </EntityType>
+        <Association Name="FK_Attendance_EmpID">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Attendance" Type="Self.Attendance" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmpID" />
+            </Principal>
+            <Dependent Role="Attendance">
+              <PropertyRef Name="EmpID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AttendanceLog_EmpID">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="AttendanceLog" Type="Self.AttendanceLog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmpID" />
+            </Principal>
+            <Dependent Role="AttendanceLog">
+              <PropertyRef Name="EmpID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LastUpdatedRecord_EmpNumber">
+          <End Role="LastUpdatedRecord" Type="Self.LastUpdatedRecord" Multiplicity="1" />
+          <End Role="LastUpdatedRecord1" Type="Self.LastUpdatedRecord" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="LastUpdatedRecord">
+              <PropertyRef Name="LastUpdatedID" />
+            </Principal>
+            <Dependent Role="LastUpdatedRecord1">
+              <PropertyRef Name="LastUpdatedID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TmpAttendance_EmpID">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="TmpAttendance" Type="Self.TmpAttendance" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmpID" />
+            </Principal>
+            <Dependent Role="TmpAttendance">
+              <PropertyRef Name="EmpID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TmpAttendanceLog_EmpID">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="TmpAttendanceLog" Type="Self.TmpAttendanceLog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmpID" />
+            </Principal>
+            <Dependent Role="TmpAttendanceLog">
+              <PropertyRef Name="EmpID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="CalculateHour" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+          <Parameter Name="firstIn" Type="datetime" Mode="In" />
+          <Parameter Name="lastOut" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="get_AllEmpInsideHour" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="toDate" Type="date" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="WDate" Type="datetime2" Precision="7" Nullable="false" />
+                <Property Name="EmpName" Type="nchar" MaxLength="20" />
+                <Property Name="Inside" Type="varchar" MaxLength="22" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="get_AllEmpOutsideHour" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="toDate" Type="date" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="WDate" Type="datetime2" Precision="7" Nullable="false" />
+                <Property Name="EmpName" Type="nchar" MaxLength="20" />
+                <Property Name="Outside" Type="varchar" MaxLength="22" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="sp_Attendance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="rMessage" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="sp_MonthlyLate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="month" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="AttendanceDBModelStoreContainer">
+          <EntitySet Name="Attendance" EntityType="Self.Attendance" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AttendanceLog" EntityType="Self.AttendanceLog" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AttenDownloadError" EntityType="Self.AttenDownloadError" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LastUpdatedRecord" EntityType="Self.LastUpdatedRecord" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Organaization" EntityType="Self.Organaization" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TmpAttendance" EntityType="Self.TmpAttendance" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TmpAttendanceLog" EntityType="Self.TmpAttendanceLog" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="View_1" EntityType="Self.View_1" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [View_1].[EmpName] AS [EmpName], 
+    [View_1].[Designation] AS [Designation], 
+    [View_1].[WDate] AS [WDate], 
+    [View_1].[Late] AS [Late], 
+    [View_1].[DayDeduct] AS [DayDeduct]
+    FROM [dbo].[View_1] AS [View_1]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vw_Attendance" EntityType="Self.vw_Attendance" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [vw_Attendance].[EmpID] AS [EmpID], 
+    [vw_Attendance].[EmpNumber] AS [EmpNumber], 
+    [vw_Attendance].[EmpName] AS [EmpName], 
+    [vw_Attendance].[Designation] AS [Designation], 
+    [vw_Attendance].[WorkingHour] AS [WorkingHour], 
+    [vw_Attendance].[WDate] AS [WDate], 
+    [vw_Attendance].[LateStatus] AS [LateStatus], 
+    [vw_Attendance].[OfficeStatus] AS [OfficeStatus], 
+    [vw_Attendance].[AttendanceID] AS [AttendanceID], 
+    [vw_Attendance].[LateNotify] AS [LateNotify], 
+    [vw_Attendance].[LateEmailSend] AS [LateEmailSend], 
+    [vw_Attendance].[Comments] AS [Comments], 
+    [vw_Attendance].[InTime] AS [InTime], 
+    [vw_Attendance].[OutTime] AS [OutTime], 
+    [vw_Attendance].[LastInTime] AS [LastInTime]
+    FROM [dbo].[vw_Attendance] AS [vw_Attendance]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vw_AttendanceLog" EntityType="Self.vw_AttendanceLog" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [vw_AttendanceLog].[InTime] AS [InTime], 
+    [vw_AttendanceLog].[OutTime] AS [OutTime], 
+    [vw_AttendanceLog].[InsideOfficeDuration] AS [InsideOfficeDuration], 
+    [vw_AttendanceLog].[OutsideOfficeDuration] AS [OutsideOfficeDuration], 
+    [vw_AttendanceLog].[WDate] AS [WDate], 
+    [vw_AttendanceLog].[Id] AS [Id], 
+    [vw_AttendanceLog].[EmpID] AS [EmpID]
+    FROM [dbo].[vw_AttendanceLog] AS [vw_AttendanceLog]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vw_InsideHour" EntityType="Self.vw_InsideHour" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [vw_InsideHour].[WDate] AS [WDate], 
+    [vw_InsideHour].[EmpName] AS [EmpName], 
+    [vw_InsideHour].[Inside] AS [Inside]
+    FROM [dbo].[vw_InsideHour] AS [vw_InsideHour]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vw_OutsideHour" EntityType="Self.vw_OutsideHour" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [vw_OutsideHour].[WDate] AS [WDate], 
+    [vw_OutsideHour].[EmpName] AS [EmpName], 
+    [vw_OutsideHour].[Outside] AS [Outside]
+    FROM [dbo].[vw_OutsideHour] AS [vw_OutsideHour]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_Attendance_EmpID" Association="Self.FK_Attendance_EmpID">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Attendance" EntitySet="Attendance" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AttendanceLog_EmpID" Association="Self.FK_AttendanceLog_EmpID">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="AttendanceLog" EntitySet="AttendanceLog" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LastUpdatedRecord_EmpNumber" Association="Self.FK_LastUpdatedRecord_EmpNumber">
+            <End Role="LastUpdatedRecord" EntitySet="LastUpdatedRecord" />
+            <End Role="LastUpdatedRecord1" EntitySet="LastUpdatedRecord" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TmpAttendance_EmpID" Association="Self.FK_TmpAttendance_EmpID">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="TmpAttendance" EntitySet="TmpAttendance" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TmpAttendanceLog_EmpID" Association="Self.FK_TmpAttendanceLog_EmpID">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="TmpAttendanceLog" EntitySet="TmpAttendanceLog" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AttendanceDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <ComplexType Name="get_AllEmpInsideHour_Result">
+          <Property Name="WDate" Type="DateTime" Nullable="false" />
+          <Property Name="EmpName" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Inside" Type="String" MaxLength="22" FixedLength="false" Unicode="false" />
+        </ComplexType>
+        <ComplexType Name="get_AllEmpOutsideHour_Result">
+          <Property Name="WDate" Type="DateTime" Nullable="false" />
+          <Property Name="EmpName" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Outside" Type="String" MaxLength="22" FixedLength="false" Unicode="false" />
+        </ComplexType>
+        <EntityType Name="Attendance">
+          <Key>
+            <PropertyRef Name="AttendanceID" />
+          </Key>
+          <Property Name="AttendanceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UniqueID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EmpID" Type="Int32" Nullable="false" />
+          <Property Name="InTime" Type="DateTime" Precision="3" />
+          <Property Name="OutTime" Type="DateTime" Precision="3" />
+          <Property Name="LastInTime" Type="DateTime" Precision="3" />
+          <Property Name="WorkingHour" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="WDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="LateStatus" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Purpose" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="OfficeStatus" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="LateEmailSend" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="LateNotify" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Comments" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK_Attendance_EmpID" FromRole="Attendance" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="AttendanceLog">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UniqueID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EmpID" Type="Int32" Nullable="false" />
+          <Property Name="InTime" Type="DateTime" Precision="3" />
+          <Property Name="OutTime" Type="DateTime" Precision="3" />
+          <Property Name="InsideOfficeDuration" Type="Time" Precision="7" />
+          <Property Name="OutsideOfficeDuration" Type="Time" Precision="7" />
+          <Property Name="WDate" Type="DateTime" Nullable="false" Precision="7" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK_AttendanceLog_EmpID" FromRole="AttendanceLog" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="AttenDownloadError">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ErrorMessage" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CreatedTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="0" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="EmpID" />
+          </Key>
+          <Property Name="EmpID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmpNumber" Type="Int32" Nullable="false" />
+          <Property Name="EmpName" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Designation" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="AlertEmail" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="EmpLevel" Type="Byte" />
+          <Property Name="OfficeStartTime" Type="Time" Precision="7" />
+          <Property Name="OfficeEndTime" Type="Time" Precision="7" />
+          <NavigationProperty Name="Attendances" Relationship="Self.FK_Attendance_EmpID" FromRole="Employee" ToRole="Attendance" />
+          <NavigationProperty Name="AttendanceLogs" Relationship="Self.FK_AttendanceLog_EmpID" FromRole="Employee" ToRole="AttendanceLog" />
+          <NavigationProperty Name="TmpAttendances" Relationship="Self.FK_TmpAttendance_EmpID" FromRole="Employee" ToRole="TmpAttendance" />
+          <NavigationProperty Name="TmpAttendanceLogs" Relationship="Self.FK_TmpAttendanceLog_EmpID" FromRole="Employee" ToRole="TmpAttendanceLog" />
+        </EntityType>
+        <EntityType Name="LastUpdatedRecord">
+          <Key>
+            <PropertyRef Name="LastUpdatedID" />
+          </Key>
+          <Property Name="LastUpdatedID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmpNumber" Type="Int32" Nullable="false" />
+          <Property Name="MachineNO" Type="Int32" Nullable="false" />
+          <Property Name="VerifyMode" Type="Int32" Nullable="false" />
+          <Property Name="LYear" Type="Int32" Nullable="false" />
+          <Property Name="LMonth" Type="Int32" Nullable="false" />
+          <Property Name="LDay" Type="Int32" Nullable="false" />
+          <Property Name="LHour" Type="Int32" />
+          <Property Name="LMinute" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <Property Name="LSecond" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="LastUpdatedRecord1" Relationship="Self.FK_LastUpdatedRecord_EmpNumber" FromRole="LastUpdatedRecord" ToRole="LastUpdatedRecord1" />
+          <NavigationProperty Name="LastUpdatedRecord2" Relationship="Self.FK_LastUpdatedRecord_EmpNumber" FromRole="LastUpdatedRecord1" ToRole="LastUpdatedRecord" />
+        </EntityType>
+        <EntityType Name="Organaization">
+          <Key>
+            <PropertyRef Name="OrganaizationID" />
+          </Key>
+          <Property Name="OrganaizationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="210" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+          <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="Logo" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="Web" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TmpAttendance">
+          <Key>
+            <PropertyRef Name="TmpAttendanceID" />
+          </Key>
+          <Property Name="TmpAttendanceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UniqueID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EmpID" Type="Int32" Nullable="false" />
+          <Property Name="InTime" Type="DateTime" Precision="3" />
+          <Property Name="OutTime" Type="DateTime" Precision="3" />
+          <Property Name="LastInTime" Type="DateTime" Precision="3" />
+          <Property Name="WorkingHour" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="WDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="LateStatus" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Purpose" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="OfficeStatus" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="LateEmailSend" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="LateNotify" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Comments" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK_TmpAttendance_EmpID" FromRole="TmpAttendance" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="TmpAttendanceLog">
+          <Key>
+            <PropertyRef Name="TmpAttendanceLogID" />
+          </Key>
+          <Property Name="TmpAttendanceLogID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UniqueID" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="EmpID" Type="Int32" Nullable="false" />
+          <Property Name="InTime" Type="DateTime" Precision="3" />
+          <Property Name="OutTime" Type="DateTime" Precision="3" />
+          <Property Name="InsideOfficeDuration" Type="Time" Precision="7" />
+          <Property Name="OutsideOfficeDuration" Type="Time" Precision="7" />
+          <Property Name="WDate" Type="DateTime" Nullable="false" Precision="7" />
+          <NavigationProperty Name="Employee" Relationship="Self.FK_TmpAttendanceLog_EmpID" FromRole="TmpAttendanceLog" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="View_1">
+          <Key>
+            <PropertyRef Name="WDate" />
+          </Key>
+          <Property Name="EmpName" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Designation" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="WDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Late" Type="Int32" />
+          <Property Name="DayDeduct" Type="Int32" />
+        </EntityType>
+        <EntityType Name="vw_Attendance">
+          <Key>
+            <PropertyRef Name="WDate" />
+            <PropertyRef Name="AttendanceID" />
+          </Key>
+          <Property Name="EmpID" Type="Int32" />
+          <Property Name="EmpNumber" Type="Int32" />
+          <Property Name="EmpName" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Designation" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+          <Property Name="WorkingHour" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="WDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="LateStatus" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="OfficeStatus" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="AttendanceID" Type="Int32" Nullable="false" />
+          <Property Name="LateNotify" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="LateEmailSend" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="Comments" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="InTime" Type="DateTime" Precision="3" />
+          <Property Name="OutTime" Type="DateTime" Precision="3" />
+          <Property Name="LastInTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="vw_AttendanceLog">
+          <Key>
+            <PropertyRef Name="WDate" />
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="EmpID" />
+          </Key>
+          <Property Name="InTime" Type="DateTime" Precision="3" />
+          <Property Name="OutTime" Type="DateTime" Precision="3" />
+          <Property Name="InsideOfficeDuration" Type="Time" Precision="7" />
+          <Property Name="OutsideOfficeDuration" Type="Time" Precision="7" />
+          <Property Name="WDate" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="EmpID" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="vw_InsideHour">
+          <Key>
+            <PropertyRef Name="WDate" />
+          </Key>
+          <Property Name="WDate" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="EmpName" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Inside" Type="String" MaxLength="22" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="vw_OutsideHour">
+          <Key>
+            <PropertyRef Name="WDate" />
+          </Key>
+          <Property Name="WDate" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="EmpName" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Outside" Type="String" MaxLength="22" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_Attendance_EmpID">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="Attendance" Type="Self.Attendance" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmpID" />
+            </Principal>
+            <Dependent Role="Attendance">
+              <PropertyRef Name="EmpID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AttendanceLog_EmpID">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="AttendanceLog" Type="Self.AttendanceLog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmpID" />
+            </Principal>
+            <Dependent Role="AttendanceLog">
+              <PropertyRef Name="EmpID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TmpAttendance_EmpID">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="TmpAttendance" Type="Self.TmpAttendance" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmpID" />
+            </Principal>
+            <Dependent Role="TmpAttendance">
+              <PropertyRef Name="EmpID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TmpAttendanceLog_EmpID">
+          <End Role="Employee" Type="Self.Employee" Multiplicity="1" />
+          <End Role="TmpAttendanceLog" Type="Self.TmpAttendanceLog" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="EmpID" />
+            </Principal>
+            <Dependent Role="TmpAttendanceLog">
+              <PropertyRef Name="EmpID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LastUpdatedRecord_EmpNumber">
+          <End Role="LastUpdatedRecord" Type="Self.LastUpdatedRecord" Multiplicity="1" />
+          <End Role="LastUpdatedRecord1" Type="Self.LastUpdatedRecord" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="LastUpdatedRecord">
+              <PropertyRef Name="LastUpdatedID" />
+            </Principal>
+            <Dependent Role="LastUpdatedRecord1">
+              <PropertyRef Name="LastUpdatedID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Attendances" EntityType="Self.Attendance" />
+          <EntitySet Name="AttendanceLogs" EntityType="Self.AttendanceLog" />
+          <EntitySet Name="AttenDownloadErrors" EntityType="Self.AttenDownloadError" />
+          <EntitySet Name="Employees" EntityType="Self.Employee" />
+          <EntitySet Name="LastUpdatedRecords" EntityType="Self.LastUpdatedRecord" />
+          <EntitySet Name="Organaizations" EntityType="Self.Organaization" />
+          <EntitySet Name="TmpAttendances" EntityType="Self.TmpAttendance" />
+          <EntitySet Name="TmpAttendanceLogs" EntityType="Self.TmpAttendanceLog" />
+          <EntitySet Name="View_1" EntityType="Self.View_1" />
+          <EntitySet Name="vw_Attendance" EntityType="Self.vw_Attendance" />
+          <EntitySet Name="vw_AttendanceLog" EntityType="Self.vw_AttendanceLog" />
+          <EntitySet Name="vw_InsideHour" EntityType="Self.vw_InsideHour" />
+          <EntitySet Name="vw_OutsideHour" EntityType="Self.vw_OutsideHour" />
+          <AssociationSet Name="FK_Attendance_EmpID" Association="Self.FK_Attendance_EmpID">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Attendance" EntitySet="Attendances" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AttendanceLog_EmpID" Association="Self.FK_AttendanceLog_EmpID">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="AttendanceLog" EntitySet="AttendanceLogs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TmpAttendance_EmpID" Association="Self.FK_TmpAttendance_EmpID">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="TmpAttendance" EntitySet="TmpAttendances" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TmpAttendanceLog_EmpID" Association="Self.FK_TmpAttendanceLog_EmpID">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="TmpAttendanceLog" EntitySet="TmpAttendanceLogs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LastUpdatedRecord_EmpNumber" Association="Self.FK_LastUpdatedRecord_EmpNumber">
+            <End Role="LastUpdatedRecord" EntitySet="LastUpdatedRecords" />
+            <End Role="LastUpdatedRecord1" EntitySet="LastUpdatedRecords" />
+          </AssociationSet>
+          <FunctionImport Name="get_AllEmpInsideHour" IsComposable="true" ReturnType="Collection(AttendanceDBModel.get_AllEmpInsideHour_Result)">
+            <Parameter Name="toDate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="get_AllEmpOutsideHour" IsComposable="true" ReturnType="Collection(AttendanceDBModel.get_AllEmpOutsideHour_Result)">
+            <Parameter Name="toDate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="sp_Attendance">
+            <Parameter Name="rMessage" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="sp_MonthlyLate" ReturnType="Collection(AttendanceDBModel.sp_MonthlyLate_Result)">
+            <Parameter Name="month" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <ComplexType Name="sp_MonthlyLate_Result">
+          <Property Type="String" Name="EmpName" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="Designation" Nullable="true" MaxLength="30" />
+          <Property Type="Int32" Name="Late" Nullable="true" />
+          <Property Type="Int32" Name="DayDeduct" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AttendanceDBModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="Attendances">
+            <EntityTypeMapping TypeName="AttendanceDBModel.Attendance">
+              <MappingFragment StoreEntitySet="Attendance">
+                <ScalarProperty Name="AttendanceID" ColumnName="AttendanceID" />
+                <ScalarProperty Name="UniqueID" ColumnName="UniqueID" />
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+                <ScalarProperty Name="InTime" ColumnName="InTime" />
+                <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+                <ScalarProperty Name="LastInTime" ColumnName="LastInTime" />
+                <ScalarProperty Name="WorkingHour" ColumnName="WorkingHour" />
+                <ScalarProperty Name="WDate" ColumnName="WDate" />
+                <ScalarProperty Name="LateStatus" ColumnName="LateStatus" />
+                <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+                <ScalarProperty Name="OfficeStatus" ColumnName="OfficeStatus" />
+                <ScalarProperty Name="LateEmailSend" ColumnName="LateEmailSend" />
+                <ScalarProperty Name="LateNotify" ColumnName="LateNotify" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AttendanceLogs">
+            <EntityTypeMapping TypeName="AttendanceDBModel.AttendanceLog">
+              <MappingFragment StoreEntitySet="AttendanceLog">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UniqueID" ColumnName="UniqueID" />
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+                <ScalarProperty Name="InTime" ColumnName="InTime" />
+                <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+                <ScalarProperty Name="InsideOfficeDuration" ColumnName="InsideOfficeDuration" />
+                <ScalarProperty Name="OutsideOfficeDuration" ColumnName="OutsideOfficeDuration" />
+                <ScalarProperty Name="WDate" ColumnName="WDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AttenDownloadErrors">
+            <EntityTypeMapping TypeName="AttendanceDBModel.AttenDownloadError">
+              <MappingFragment StoreEntitySet="AttenDownloadError">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+                <ScalarProperty Name="CreatedTime" ColumnName="CreatedTime" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="AttendanceDBModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+                <ScalarProperty Name="EmpNumber" ColumnName="EmpNumber" />
+                <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+                <ScalarProperty Name="Designation" ColumnName="Designation" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="AlertEmail" ColumnName="AlertEmail" />
+                <ScalarProperty Name="EmpLevel" ColumnName="EmpLevel" />
+                <ScalarProperty Name="OfficeStartTime" ColumnName="OfficeStartTime" />
+                <ScalarProperty Name="OfficeEndTime" ColumnName="OfficeEndTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LastUpdatedRecords">
+            <EntityTypeMapping TypeName="AttendanceDBModel.LastUpdatedRecord">
+              <MappingFragment StoreEntitySet="LastUpdatedRecord">
+                <ScalarProperty Name="LastUpdatedID" ColumnName="LastUpdatedID" />
+                <ScalarProperty Name="EmpNumber" ColumnName="EmpNumber" />
+                <ScalarProperty Name="MachineNO" ColumnName="MachineNO" />
+                <ScalarProperty Name="VerifyMode" ColumnName="VerifyMode" />
+                <ScalarProperty Name="LYear" ColumnName="LYear" />
+                <ScalarProperty Name="LMonth" ColumnName="LMonth" />
+                <ScalarProperty Name="LDay" ColumnName="LDay" />
+                <ScalarProperty Name="LHour" ColumnName="LHour" />
+                <ScalarProperty Name="LMinute" ColumnName="LMinute" />
+                <ScalarProperty Name="LSecond" ColumnName="LSecond" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Organaizations">
+            <EntityTypeMapping TypeName="AttendanceDBModel.Organaization">
+              <MappingFragment StoreEntitySet="Organaization">
+                <ScalarProperty Name="OrganaizationID" ColumnName="OrganaizationID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Logo" ColumnName="Logo" />
+                <ScalarProperty Name="Web" ColumnName="Web" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TmpAttendances">
+            <EntityTypeMapping TypeName="AttendanceDBModel.TmpAttendance">
+              <MappingFragment StoreEntitySet="TmpAttendance">
+                <ScalarProperty Name="TmpAttendanceID" ColumnName="TmpAttendanceID" />
+                <ScalarProperty Name="UniqueID" ColumnName="UniqueID" />
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+                <ScalarProperty Name="InTime" ColumnName="InTime" />
+                <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+                <ScalarProperty Name="LastInTime" ColumnName="LastInTime" />
+                <ScalarProperty Name="WorkingHour" ColumnName="WorkingHour" />
+                <ScalarProperty Name="WDate" ColumnName="WDate" />
+                <ScalarProperty Name="LateStatus" ColumnName="LateStatus" />
+                <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+                <ScalarProperty Name="OfficeStatus" ColumnName="OfficeStatus" />
+                <ScalarProperty Name="LateEmailSend" ColumnName="LateEmailSend" />
+                <ScalarProperty Name="LateNotify" ColumnName="LateNotify" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TmpAttendanceLogs">
+            <EntityTypeMapping TypeName="AttendanceDBModel.TmpAttendanceLog">
+              <MappingFragment StoreEntitySet="TmpAttendanceLog">
+                <ScalarProperty Name="TmpAttendanceLogID" ColumnName="TmpAttendanceLogID" />
+                <ScalarProperty Name="UniqueID" ColumnName="UniqueID" />
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+                <ScalarProperty Name="InTime" ColumnName="InTime" />
+                <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+                <ScalarProperty Name="InsideOfficeDuration" ColumnName="InsideOfficeDuration" />
+                <ScalarProperty Name="OutsideOfficeDuration" ColumnName="OutsideOfficeDuration" />
+                <ScalarProperty Name="WDate" ColumnName="WDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="View_1">
+            <EntityTypeMapping TypeName="AttendanceDBModel.View_1">
+              <MappingFragment StoreEntitySet="View_1">
+                <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+                <ScalarProperty Name="Designation" ColumnName="Designation" />
+                <ScalarProperty Name="WDate" ColumnName="WDate" />
+                <ScalarProperty Name="Late" ColumnName="Late" />
+                <ScalarProperty Name="DayDeduct" ColumnName="DayDeduct" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vw_Attendance">
+            <EntityTypeMapping TypeName="AttendanceDBModel.vw_Attendance">
+              <MappingFragment StoreEntitySet="vw_Attendance">
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+                <ScalarProperty Name="EmpNumber" ColumnName="EmpNumber" />
+                <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+                <ScalarProperty Name="Designation" ColumnName="Designation" />
+                <ScalarProperty Name="WorkingHour" ColumnName="WorkingHour" />
+                <ScalarProperty Name="WDate" ColumnName="WDate" />
+                <ScalarProperty Name="LateStatus" ColumnName="LateStatus" />
+                <ScalarProperty Name="OfficeStatus" ColumnName="OfficeStatus" />
+                <ScalarProperty Name="AttendanceID" ColumnName="AttendanceID" />
+                <ScalarProperty Name="LateNotify" ColumnName="LateNotify" />
+                <ScalarProperty Name="LateEmailSend" ColumnName="LateEmailSend" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="InTime" ColumnName="InTime" />
+                <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+                <ScalarProperty Name="LastInTime" ColumnName="LastInTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vw_AttendanceLog">
+            <EntityTypeMapping TypeName="AttendanceDBModel.vw_AttendanceLog">
+              <MappingFragment StoreEntitySet="vw_AttendanceLog">
+                <ScalarProperty Name="InTime" ColumnName="InTime" />
+                <ScalarProperty Name="OutTime" ColumnName="OutTime" />
+                <ScalarProperty Name="InsideOfficeDuration" ColumnName="InsideOfficeDuration" />
+                <ScalarProperty Name="OutsideOfficeDuration" ColumnName="OutsideOfficeDuration" />
+                <ScalarProperty Name="WDate" ColumnName="WDate" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vw_InsideHour">
+            <EntityTypeMapping TypeName="AttendanceDBModel.vw_InsideHour">
+              <MappingFragment StoreEntitySet="vw_InsideHour">
+                <ScalarProperty Name="WDate" ColumnName="WDate" />
+                <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+                <ScalarProperty Name="Inside" ColumnName="Inside" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vw_OutsideHour">
+            <EntityTypeMapping TypeName="AttendanceDBModel.vw_OutsideHour">
+              <MappingFragment StoreEntitySet="vw_OutsideHour">
+                <ScalarProperty Name="WDate" ColumnName="WDate" />
+                <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+                <ScalarProperty Name="Outside" ColumnName="Outside" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionName="AttendanceDBModel.Store.get_AllEmpInsideHour" FunctionImportName="get_AllEmpInsideHour">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="AttendanceDBModel.get_AllEmpInsideHour_Result">
+                <ScalarProperty Name="WDate" ColumnName="WDate" />
+                <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+                <ScalarProperty Name="Inside" ColumnName="Inside" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionName="AttendanceDBModel.Store.get_AllEmpOutsideHour" FunctionImportName="get_AllEmpOutsideHour">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="AttendanceDBModel.get_AllEmpOutsideHour_Result">
+                <ScalarProperty Name="WDate" ColumnName="WDate" />
+                <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+                <ScalarProperty Name="Outside" ColumnName="Outside" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_Attendance" FunctionName="AttendanceDBModel.Store.sp_Attendance" />
+          <FunctionImportMapping FunctionImportName="sp_MonthlyLate" FunctionName="AttendanceDBModel.Store.sp_MonthlyLate">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="AttendanceDBModel.sp_MonthlyLate_Result">
+                <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+                <ScalarProperty Name="Designation" ColumnName="Designation" />
+                <ScalarProperty Name="Late" ColumnName="Late" />
+                <ScalarProperty Name="DayDeduct" ColumnName="DayDeduct" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

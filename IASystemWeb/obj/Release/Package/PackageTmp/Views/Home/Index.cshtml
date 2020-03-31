@@ -1,0 +1,211 @@
+﻿@{
+    ViewBag.Title = "Attendance";
+}@section section_top
+{
+    <link href="~/Content/built_in/assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" />
+
+<style>
+    .control {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .control-width {
+        width: 280px;
+    }
+
+    .table.table-striped tbody .greenyellow td {
+        background: #ffe5e5 !important;
+    }
+
+    .table.table-striped tbody .insideOffice td {
+        color: red;
+    }
+
+    .table-panel .panel-heading a.greenyellow {
+        background: #ffe5e5 !important;
+    }
+
+    .table-panel .panel-heading a.insideOffice {
+        color: red;
+    }
+  .btn{
+     
+  }
+</style>
+
+}
+
+<link href="~/Content/home.css" rel="stylesheet" />
+
+<div class="container">
+    <br />
+    <div class="right-heading">
+        <h3 style="color:black;font-weight:bold;text-align:left ">DAILY ATTENDANCE</h3>      
+    </div>
+    
+    <div class="row" style="margin-top:20px;" ng-controller="attendanceController" ng-init="loadDefault()">
+        <div class="col-lg-12">
+            <div class="row control">
+                <div class="col-md-8">
+                    <div class="row form-content" style="justify-content: flex-end">
+
+                        <div class=" col-md-3 col-xs-12">
+                            <div class="form-group">
+                                <label>From Date</label>
+                                <div class="input-daterange" id="datepicker-range" style="float: right">
+                                    <input type="text" style="width:100%;padding-top:8px" class="form-control" ng-model="fromDate" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12">
+                            <div class="form-group">
+                                <label>To Date</label>
+                                <div class="input-daterange" id="datepicker-range" style="float: right">
+                                    <input type="text" style="width:100%" class="form-control" ng-model="toDate" required />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12">
+                            <div class="form-group">
+                                <label>Employee</label>
+                                <select class="form-control" ng-model="empID" style="float: right;width:100%"
+                                        ng-options="emp.EmpID as emp.EmpName for emp in empList">
+                                    <option value=""> Select Employee </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-xs-12">
+                            <div class="form-group">
+                                <label>Status</label>
+                                <select class="form-control" ng-model="status" style="float: right;width:100%"
+                                        ng-options="lStatus.StatusID as lStatus.label for lStatus in lateStatusList">
+                                    <option value="All"> Select Status </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <h5><span ng-model="message" class="bold"></span></h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="attendance" class="btn btn-success custom-btn1" style="height: 35px;width: auto;float:right;margin-top:24px;" ng-click="getUpdate()">Get Update</div>
+                    <div id="attendance1" class="btn btn-success custom-btn1" style="float:right;margin-top:24px;background-color:#10B5CC!important" ng-click="viewDailyAttendanceReport()">PDF</div>
+                    <div id="attendance2" class="btn btn-success custom-btn1" style="float:right;margin-top:24px" ng-click="loadAttendance()">Search</div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="panel-body">
+                    <div class="panel-group table-responsive" id="accordion" role="tablist" aria-multiselectable="true" st-table="data" st-safe-src="attendanceList">
+                       
+                        <div class="panel panel-default table-panel" data-ng-repeat="row in data">
+                            <div class="panel-heading" role="tab" id="heading{{$index}}">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}" aria-expanded="true" aria-controls="collapse{{$index}}" ng-class="{'greenyellow': row.LateStatus === 'L', 'table-heading': row.InTime === 'IN', 'date-heading': row.InTime === '' }" ng-click="loadDetailsEmp(row)">
+
+                                    <div style="width: 25%">{{row.EmpName}}</div>
+                                    <div style="width: 15%">{{row.InTime | date: 'hh:mm:ss a'}}</div>
+                                    <div style="width: 15%">{{row.OutTime}}</div>
+                                    <div style="width: 15%">{{row.LastInTime}}</div>
+                                    <div style="width: 15%" class="insideOffice">{{row.OfficeStatus}}</div>
+                                    <div class="hidden">{{row.LateStatus}}</div>
+                                    <div style="width: 15%">{{row.WorkingHour}}</div>
+                                </a>
+                            </div>
+                            <div id="collapse{{$index}}" class="panel-collapse collapse table-panel-coll" role="tabpanel" aria-labelledby="heading{{$index}}">
+                                @*<div class="details-heading"> Date : {{detailsDate}}</div>*@
+                                <div class="table-heading">
+                                    <div style="width: 25%"></div>
+                                    <div style="width: 15%">In</div>
+                                    <div style="width: 15%">Out</div>
+                                    @*<div style="width: 15%">In Duration(H)</div>*@
+                                    <div style="width: 15%">Out Duration</div>
+                                </div>
+                                <div class="panel-body table-panel-body details-body" data-ng-repeat="body in detailsEmpList">
+                                    <div style="width: 25%"></div>
+                                    <div style="width: 15%">{{body.InTime}}</div>
+                                    <div style="width: 15%">{{body.OutTime}}</div>
+                                    @*<div style="width: 15%">{{body.InsideOfficeDuration}}</div>*@
+                                    <div style="width: 15%">{{body.OutsideOfficeDuration}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section section_footer
+{
+    <script src="~/Content/built_in/assets/plugins/bootstrap-select2/select2.min.js"></script>
+    <script src="~/Content/built_in/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
+<script>
+    $(document).ready(function () {        
+
+         //setInterval('refreshPage()', 300000);
+        setInterval('refreshPage2()', 30000);
+
+            //setTimeout(function () {
+            //    $('#attendance').trigger('click');
+            //}, 300000);
+
+            setTimeout(function () {
+                $('#attendance2').trigger('click');
+            }, 30000);
+        });
+
+        //function refreshPage() {
+        //    setTimeout(function () {
+        //        $('#attendance').trigger('click');
+        //    }, 300000);
+        //}
+
+        function refreshPage2() {
+            setTimeout(function () {
+                $('#attendance2').trigger('click');
+            }, 30000);
+        }
+
+        //create document ready function
+        $(document).ready(function () {
+
+            //create function to display the time
+            function displayTime() {
+                //create variable currentTime and have the Date() object store computer's time
+                var currentTime = new Date();
+                //create variables for hours, minutes, and seconds		
+                var hours = currentTime.getHours();
+                var minutes = currentTime.getMinutes();
+                var seconds = currentTime.getSeconds();
+                var meridiem = " AM";
+
+                if (hours > 11) {
+                    hours = hours - 12;
+                    meridiem = " PM";
+                }
+                if (hours === 0) {
+                    hours = 12;
+                }
+                if (hours < 10) {
+                    hours = "0" + hours;
+                }
+                if (minutes < 10) {
+                    minutes = "0" + minutes;
+                }
+                if (seconds < 10) {
+                    seconds = "0" + seconds;
+                }
+                $("#clock").text(hours + ":" + minutes + ":" + seconds + meridiem);
+            }
+            displayTime();
+            setInterval(displayTime, 1000);
+        });
+        
+    </script>
+}
+

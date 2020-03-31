@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8389d07f7beb4c08bb939d781de23369" Name="Diagram1">
+        <EntityTypeShape EntityType="AttendanceDBModel.Attendance" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AttendanceDBModel.AttendanceLog" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AttendanceDBModel.AttenDownloadError" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AttendanceDBModel.Employee" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="AttendanceDBModel.LastUpdatedRecord" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AttendanceDBModel.Organaization" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AttendanceDBModel.TmpAttendance" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AttendanceDBModel.TmpAttendanceLog" Width="1.5" PointX="3" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AttendanceDBModel.View_1" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AttendanceDBModel.vw_Attendance" Width="1.5" PointX="7.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AttendanceDBModel.vw_AttendanceLog" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AttendanceDBModel.vw_InsideHour" Width="1.5" PointX="9.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AttendanceDBModel.vw_OutsideHour" Width="1.5" PointX="9.75" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="AttendanceDBModel.FK_Attendance_EmpID" ManuallyRouted="false" />
+        <AssociationConnector Association="AttendanceDBModel.FK_AttendanceLog_EmpID" ManuallyRouted="false" />
+        <AssociationConnector Association="AttendanceDBModel.FK_TmpAttendance_EmpID" ManuallyRouted="false" />
+        <AssociationConnector Association="AttendanceDBModel.FK_TmpAttendanceLog_EmpID" ManuallyRouted="false" />
+        <AssociationConnector Association="AttendanceDBModel.FK_LastUpdatedRecord_EmpNumber" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

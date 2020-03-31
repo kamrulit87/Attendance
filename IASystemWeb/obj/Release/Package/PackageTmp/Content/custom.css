@@ -1,0 +1,59 @@
+﻿.input-validation-error, .required, input:required:invalid{
+    border-left:5px solid #ee0000 !important;
+}
+.valid, input:required{
+    border-left:5px solid #f3eded !important;
+}
+
+.textarea-validation-error, .required, textarea:required:invalid{
+    border-left:5px solid #ee0000 !important;
+}
+.valid, textarea:required{
+    border-left:5px solid #f3eded !important;
+}
+.select-validation-error, .required, select:required:invalid{
+    border-left:5px solid #ee0000 !important;
+}
+.valid, select:required{
+    border-left:5px solid #f3eded !important;
+}
+.field-validation-error{
+         color:#990000;
+}
+
+.color-orange{
+    color:#279f9f;
+}
+
+ .width-350 {
+          min-width: 350px; 
+          max-width: 350px;
+        }
+
+  .width-150 {
+          min-width: 150px; 
+          max-width: 150px;
+        }
+
+    .width-100 {
+          min-width: 100px; 
+          max-width: 100px;
+        }
+    .width100{
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .width-60{
+        min-width: 80px;
+        max-width: 80px;
+    }
+
+ .color-window{
+     color:#0c0101;
+     background-color:#f0f2f4;
+ }
+ @media (min-width: 1824px){
+    .menu-pin .container-fluid.page-quotation {
+        width: 1650px;
+    }
+ }
